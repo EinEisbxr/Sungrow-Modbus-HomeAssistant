@@ -5,6 +5,8 @@ fn main() {
     println!("Connecting to Sungrow Inverter at 192.168.178.131:502...");
 
     loop {
+        print!("\x1B[2J\x1B[1;1H"); // Clear console
+
         let register_config: modbus_registers::RegisterConfig =
             modbus_registers::load_register_config();
 
@@ -32,6 +34,6 @@ fn main() {
 
         println!("Register values: {:?}", register_values);
 
-        std::thread::sleep(std::time::Duration::from_millis(200));
+        std::thread::sleep(std::time::Duration::from_millis(100));
     }
 }

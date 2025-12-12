@@ -1,5 +1,5 @@
 use modbus::{Client, tcp};
-use serde::{Deserialize, de::value};
+use serde::Deserialize;
 
 // Structure to hold the register configuration
 #[derive(Deserialize, Debug)]
@@ -9,11 +9,11 @@ pub struct RegisterConfig {
 
 // Definition of a Modbus register
 #[derive(Deserialize, Debug)]
+#[allow(dead_code)]
 pub struct ModbusRegister {
     pub name: String,
     pub label: String,
     pub address: u16,
-    pub data_type: String,
     pub unit: Option<String>,
     pub scale: Option<f64>,
     pub output_mapping: Option<String>,
@@ -21,6 +21,7 @@ pub struct ModbusRegister {
 
 // Structure to hold device type information
 #[derive(Deserialize, Debug)]
+#[allow(dead_code)]
 pub struct DeviceType {
     pub model: String,
     pub code: String,
@@ -30,6 +31,7 @@ pub struct DeviceType {
 
 // Add enum to represent register values
 #[derive(Debug)]
+#[allow(dead_code)]
 pub enum RegisterValue {
     Numeric(u16),
     Float(String),

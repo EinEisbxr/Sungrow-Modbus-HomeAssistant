@@ -3,44 +3,81 @@
         {
             "name": "device_type",
             "label": "Device Type",
-            "address": 4999,
-            "data_type": "u16"
+            "address": 4999
         },
         {
             "name": "nominal_output_power",
             "label": "Nominal Output Power",
             "address": 5000,
-            "data_type": "u16",
             "unit": "kW",
+            "scale": 0.1
+        },
+        {
+            "name": "inside_temperature",
+            "label": "Inside Temperature",
+            "address": 5007,
+            "unit": "°C",
             "scale": 0.1
         },
         {
             "name": "total_dc_power",
             "label": "Total DC Power",
             "address": 5016,
-            "data_type": "u16",
+            "unit": "W"
+        },
+        {
+            "name": "battery_power",
+            "label": "Battery Power",
+            "address": 5213,
             "unit": "W"
         },
         {
             "name": "grid_frequency",
             "label": "Grid Frequency",
             "address": 5241,
-            "data_type": "u16",
             "unit": "Hz",
             "scale": 0.01
+        },
+        {
+            "name": "meter_active_power",
+            "label": "Meter Active Power",
+            "address": 5600,
+            "unit": "W"
+        },
+        {
+            "name": "meter_phase_a_active_power",
+            "label": "Meter Phase A Active Power",
+            "address": 5602,
+            "unit": "W"
+        },
+        {
+            "name": "meter_phase_b_active_power",
+            "label": "Meter Phase B Active Power",
+            "address": 5604,
+            "unit": "W"
+        },
+        {
+            "name": "meter_phase_c_active_power",
+            "label": "Meter Phase C Active Power",
+            "address": 5607,
+            "unit": "W"
+        },
+        {
+            "name": "load_power",
+            "label": "Load Power",
+            "address": 13007,
+            "unit": "W"
         },
         {
             "name": "total_active_power",
             "label": "Total Active Power",
             "address": 13033,
-            "data_type": "u16",
             "unit": "W"
         },
         {
             "name": "phase_a_current",
             "label": "Phase A Current",
             "address": 13030,
-            "data_type": "u16",
             "unit": "A",
             "scale": 0.1
         }

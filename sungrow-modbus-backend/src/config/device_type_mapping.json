@@ -1,0 +1,200 @@
+[
+    {
+        "model": "SH3.0RS",
+        "code": "0xD17",
+        "mppt_count": 2,
+        "string_per_mppt": "1;1"
+    },
+    {
+        "model": "SH3.6RS",
+        "code": "0xD0D",
+        "mppt_count": 2,
+        "string_per_mppt": "1;1"
+    },
+    {
+        "model": "SH4.0RS",
+        "code": "0xD18",
+        "mppt_count": 2,
+        "string_per_mppt": "1;1"
+    },
+    {
+        "model": "SH5.0RS",
+        "code": "0xD0F",
+        "mppt_count": 2,
+        "string_per_mppt": "1;1"
+    },
+    {
+        "model": "SH6.0RS",
+        "code": "0xD10",
+        "mppt_count": 2,
+        "string_per_mppt": "1;1"
+    },
+    {
+        "model": "SH8.0RS",
+        "code": "0xD1A",
+        "mppt_count": 4,
+        "string_per_mppt": "1;1;1;1"
+    },
+    {
+        "model": "SH10RS",
+        "code": "0xD1B",
+        "mppt_count": 4,
+        "string_per_mppt": "1;1;1;1"
+    },
+    {
+        "model": "SH5.0RT",
+        "code": "0xE00",
+        "mppt_count": 2,
+        "string_per_mppt": "1;1"
+    },
+    {
+        "model": "SH6.0RT",
+        "code": "0xE01",
+        "mppt_count": 2,
+        "string_per_mppt": "1;1"
+    },
+    {
+        "model": "SH8.0RT",
+        "code": "0xE02",
+        "mppt_count": 2,
+        "string_per_mppt": "1;1"
+    },
+    {
+        "model": "SH10RT",
+        "code": "0xE03",
+        "mppt_count": 2,
+        "string_per_mppt": "1;1"
+    },
+    {
+        "model": "SH5.0RT-20",
+        "code": "0xE10",
+        "mppt_count": 2,
+        "string_per_mppt": "1;1"
+    },
+    {
+        "model": "SH6.0RT-20",
+        "code": "0xE11",
+        "mppt_count": 2,
+        "string_per_mppt": "1;1"
+    },
+    {
+        "model": "SH8.0RT-20",
+        "code": "0xE12",
+        "mppt_count": 2,
+        "string_per_mppt": "1;1"
+    },
+    {
+        "model": "SH10RT-20",
+        "code": "0xE13",
+        "mppt_count": 2,
+        "string_per_mppt": "1;1"
+    },
+    {
+        "model": "SH5.0RT-V112",
+        "code": "0xE0C",
+        "mppt_count": 2,
+        "string_per_mppt": "1;1"
+    },
+    {
+        "model": "SH6.0RT-V112",
+        "code": "0xE0D",
+        "mppt_count": 2,
+        "string_per_mppt": "1;1"
+    },
+    {
+        "model": "SH8.0RT-V112",
+        "code": "0xE0E",
+        "mppt_count": 2,
+        "string_per_mppt": "1;1"
+    },
+    {
+        "model": "SH10RT-V112",
+        "code": "0xE0F",
+        "mppt_count": 2,
+        "string_per_mppt": "1;1"
+    },
+    {
+        "model": "SH5.0RT-V122",
+        "code": "0xE08",
+        "mppt_count": 2,
+        "string_per_mppt": "1;1"
+    },
+    {
+        "model": "SH6.0RT-V122",
+        "code": "0xE09",
+        "mppt_count": 2,
+        "string_per_mppt": "1;1"
+    },
+    {
+        "model": "SH8.0RT-V122",
+        "code": "0xE0A",
+        "mppt_count": 2,
+        "string_per_mppt": "1;1"
+    },
+    {
+        "model": "SH10RT-V122",
+        "code": "0xE0B",
+        "mppt_count": 2,
+        "string_per_mppt": "1;1"
+    },
+    {
+        "model": "SH5T",
+        "code": "0xE20",
+        "mppt_count": 2,
+        "string_per_mppt": "1;1"
+    },
+    {
+        "model": "SH6T",
+        "code": "0xE21",
+        "mppt_count": 2,
+        "string_per_mppt": "1;1"
+    },
+    {
+        "model": "SH8T",
+        "code": "0xE22",
+        "mppt_count": 2,
+        "string_per_mppt": "1;1"
+    },
+    {
+        "model": "SH10T",
+        "code": "0xE23",
+        "mppt_count": 2,
+        "string_per_mppt": "2;1"
+    },
+    {
+        "model": "SH12T",
+        "code": "0xE24",
+        "mppt_count": 2,
+        "string_per_mppt": "2;1"
+    },
+    {
+        "model": "SH15T",
+        "code": "0xE25",
+        "mppt_count": 3,
+        "string_per_mppt": "2;2;1"
+    },
+    {
+        "model": "SH20T",
+        "code": "0xE26",
+        "mppt_count": 3,
+        "string_per_mppt": "2;2;1"
+    },
+    {
+        "model": "SH25T",
+        "code": "0xE28",
+        "mppt_count": 3,
+        "string_per_mppt": "2;2;1"
+    },
+    {
+        "model": "MG5RL",
+        "code": "0xD27",
+        "mppt_count": 2,
+        "string_per_mppt": "1;1"
+    },
+    {
+        "model": "MG6RL",
+        "code": "0xD28",
+        "mppt_count": 2,
+        "string_per_mppt": "1;1"
+    }
+]

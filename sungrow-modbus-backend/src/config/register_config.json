@@ -1,0 +1,48 @@
+{
+    "registers": [
+        {
+            "name": "device_type",
+            "label": "Device Type",
+            "address": 4999,
+            "data_type": "u16"
+        },
+        {
+            "name": "nominal_output_power",
+            "label": "Nominal Output Power",
+            "address": 5000,
+            "data_type": "u16",
+            "unit": "kW",
+            "scale": 0.1
+        },
+        {
+            "name": "total_dc_power",
+            "label": "Total DC Power",
+            "address": 5016,
+            "data_type": "u16",
+            "unit": "W"
+        },
+        {
+            "name": "grid_frequency",
+            "label": "Grid Frequency",
+            "address": 5241,
+            "data_type": "u16",
+            "unit": "Hz",
+            "scale": 0.01
+        },
+        {
+            "name": "total_active_power",
+            "label": "Total Active Power",
+            "address": 13033,
+            "data_type": "u16",
+            "unit": "W"
+        },
+        {
+            "name": "phase_a_current",
+            "label": "Phase A Current",
+            "address": 13030,
+            "data_type": "u16",
+            "unit": "A",
+            "scale": 0.1
+        }
+    ]
+}

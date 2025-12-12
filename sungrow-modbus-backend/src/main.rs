@@ -5,6 +5,9 @@ fn main() {
     println!("Connecting to Sungrow Inverter at 192.168.178.131:502...");
 
     loop {
+        let register_config: modbus_registers::RegisterConfig =
+            modbus_registers::load_register_config();
+
         let cfg = Config::default();
         let mut client = match Transport::new_with_cfg("192.168.178.131", cfg) {
             Ok(c) => c,
@@ -15,10 +18,20 @@ fn main() {
             }
         };
 
-        let _device_type = modbus_registers::read_device_type(&mut client);
-        let _nominal_output_power = modbus_registers::read_nominal_output_power(&mut client);
-        let _dc_power = modbus_registers::read_total_dc_power(&mut client);
+        println!("Connected successfully.");
 
-        std::thread::sleep(std::time::Duration::from_millis(250));
+        println!("Reading registers...");
+        let register_values = match modbus_registers::read_registers(register_config, &mut client) {
+            Ok(values) => values,
+            Err(e) => {
+                eprintln!("Error reading registers: {:?}", e);
+                std::thread::sleep(std::time::Duration::from_secs(5));
+                continue;
+            }
+        };
+
+        println!("Register values: {:?}", register_values);
+
+        std::thread::sleep(std::time::Duration::from_millis(200));
     }
 }

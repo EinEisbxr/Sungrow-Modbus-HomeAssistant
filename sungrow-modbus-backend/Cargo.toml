@@ -1,0 +1,7 @@
+[package]
+name = "sungrow-modbus-backend"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+modbus = "1.1.2"

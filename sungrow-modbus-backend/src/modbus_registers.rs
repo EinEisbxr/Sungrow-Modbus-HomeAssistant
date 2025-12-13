@@ -56,13 +56,13 @@ pub fn load_device_types() -> Vec<DeviceType> {
 
 // Function to read registers based on the configuration
 pub fn read_registers(
-    registers: RegisterConfig,
+    registers: &RegisterConfig,
     client: &mut tcp::Transport,
 ) -> Result<Vec<(String, RegisterValue)>, modbus::Error> {
     let mut values = Vec::new();
 
     // Read each register defined in the configuration
-    for reg in registers.registers {
+    for reg in &registers.registers {
         let value: u16 = client.read_input_registers(reg.address, 1)?[0];
 
         if reg.name == "device_type" {
@@ -71,10 +71,10 @@ pub fn read_registers(
 
             if let Some(device) = device_types.iter().find(|d| d.code == hex_value) {
                 println!("Device Type: {} (Code: {})", device.model, device.code);
-                values.push((reg.name, RegisterValue::Text(device.model.clone())));
+                values.push((reg.name.clone(), RegisterValue::Text(device.model.clone())));
             } else {
                 println!("Unknown Device Type Code: {}", hex_value);
-                values.push((reg.name, RegisterValue::Text("Unknown".to_string())));
+                values.push((reg.name.clone(), RegisterValue::Text("Unknown".to_string())));
             }
         } else {
             let final_value: RegisterValue = if let Some(scale) = reg.scale {
@@ -101,7 +101,7 @@ pub fn read_registers(
                 RegisterValue::Numeric(value)
             };
 
-            values.push((reg.name, final_value));
+            values.push((reg.name.clone(), final_value));
         }
     }
     Ok(values)

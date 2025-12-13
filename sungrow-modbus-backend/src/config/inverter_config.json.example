@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Inverter Name 1",
+        "ip_address": "XXX.XXX.XXX.XXX",
+        "port": 502
+    },
+    {
+        "name": "Inverter Name 2",
+        "ip_address": "XXX.XXX.XXX.XXX",
+        "port": 502
+    }
+]
